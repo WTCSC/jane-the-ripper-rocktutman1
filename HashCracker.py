@@ -3,9 +3,21 @@ def main():
     print("Welcome to the hash cracker 9000")
     print("===================================")
     print()
-    path_to_wordlist = input("Enter the relative path to your wordlist: ")
-    path_to_hashes = input("Enter the relative path to your hashes: ")
-    while 6*7 == 42:
+    while True:
+        path_to_wordlist = input("Enter the relative path to your wordlist: ")
+        try :
+            with open(path_to_wordlist, "r") as test:
+                break
+        except FileNotFoundError:
+            print("Invalid wordlist file")
+    while True:
+        path_to_hashes = input("Enter the relative path to your hashes: ")
+        try:
+            with open(path_to_hashes, "r") as test:
+                break
+        except FileNotFoundError:
+            print("Invalid hashes file")
+    while True:
         hash_type = input("Enter the hash type (md5/sha1/sha256): ").lower()
         if hash_type in ['md5', 'sha1', 'sha256']:
             break
