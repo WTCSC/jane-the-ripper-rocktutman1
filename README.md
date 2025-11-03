@@ -34,12 +34,15 @@ After running **HashCracker.py** you should see a screen like this
 Enter the path to your file(s) when prompted, you **cannot** use ~/ since the program is not running as your user. It should look something like this:
 #### If in any other directory
 >Enter the relative path to your wordlist: /path/to/wordlist.txt
+
 >Enter the relative path to your hashes: ../hashes.txt
 #### If in the repo
 >Enter the relative path to your wordlist: wordlist.txt
+
 >Enter the relative path to your hashes: hashes.txt
 #### If using the pre-installed files
 >Enter the relative path to your wordlist: test_files/test_wordlist.txt
+
 >Enter the relative path to your hashes: test_files/test_hashes.txt
 
 
