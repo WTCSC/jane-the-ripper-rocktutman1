@@ -68,7 +68,6 @@ def crack_passwords(path_to_wordlist, path_to_hashes, hash_type):
                 if hashed_word in goal_hashes:
                     index=goal_hashes.index(hashed_word)
                     completed_hashes += f"[+] {goal_hashes[index]} matched to {line}"
-        print (goal_hashes)
         return completed_hashes, goal_hashes
 import hashlib
 if __name__ == "__main__":
